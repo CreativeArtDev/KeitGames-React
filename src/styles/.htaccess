@@ -1,0 +1,6 @@
+Redirect 301 /products.html/ http://www.keitgames.com/products.html
+Redirect 301 /apps/ http://www.keitgames.com/products.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^keitgames.com
+RewriteRule (.*) http://www.keitgames.com/$1 [R=301,L]
